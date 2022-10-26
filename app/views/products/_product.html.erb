@@ -1,0 +1,9 @@
+<div id="<%= dom_id product %>">
+   <p>
+     <strong>Images:</strong>
+     <% product.photos.each do |image| %>
+       <%= image_tag image.file.variant(:thumb) %>
+       <%= image_tag image.file.variant(:medium) %>
+     <% end %>
+   </p>
+ </div>

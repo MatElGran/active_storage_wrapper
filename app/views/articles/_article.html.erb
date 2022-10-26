@@ -1,0 +1,8 @@
+<div id="<%= dom_id article %>">
+  <p>
+    <strong>Images:</strong>
+    <% article.schemas.each do |image| %>
+      <%= image_tag image.file.variant(:thumb) %>
+    <% end %>
+  </p>
+</div>
